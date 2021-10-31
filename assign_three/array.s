@@ -36,12 +36,12 @@ __main  FUNCTION
 	 MOV R4,#0x64
      STR R4,[R3,#0x2D]
      MOV R1,#0x0                     
-	                               ;No of elements in array
+	                               
      LDR R0,[R3]
 l1	 LDR R5,[R3,#0x5]
      ADD R3,R3,#0x5
 	 ADD R1,R1,#0x1
-	 CMP R1,0xA
+	 CMP R1,0xA            ;No of elements in array
 	 BEQ l2
 	 CMP R0,R5
 	 BGT l1
